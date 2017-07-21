@@ -1,0 +1,31 @@
+2017-07-21 15:56:00.473 ERROR 2124 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-07-21 15:56:00.656  INFO 2124 --- [main] com.controller.DemoApplication           : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 2124 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-07-21 15:56:00.657  INFO 2124 --- [main] com.controller.DemoApplication           : No active profile set, falling back to default profiles: default
+2017-07-21 15:56:00.778  INFO 2124 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e25a92e: startup date [Fri Jul 21 15:56:00 CST 2017]; root of context hierarchy
+2017-07-21 15:56:06.324  INFO 2124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-07-21 15:56:06.346  INFO 2124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-07-21 15:56:06.348  INFO 2124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-07-21 15:56:06.525  INFO 2124 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-07-21 15:56:06.530  INFO 2124 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5757 ms
+2017-07-21 15:56:06.759  INFO 2124 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-21 15:56:06.765  INFO 2124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-21 15:56:06.765  INFO 2124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-21 15:56:06.771  INFO 2124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-21 15:56:06.772  INFO 2124 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-21 15:56:07.321  INFO 2124 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e25a92e: startup date [Fri Jul 21 15:56:00 CST 2017]; root of context hierarchy
+2017-07-21 15:56:07.440  INFO 2124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.controller.IndexController.Index()
+2017-07-21 15:56:07.453  INFO 2124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-21 15:56:07.454  INFO 2124 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-21 15:56:07.497  INFO 2124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-21 15:56:07.498  INFO 2124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-21 15:56:07.608  INFO 2124 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-21 15:56:07.839  INFO 2124 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-07-21 15:56:07.924  INFO 2124 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-07-21 15:56:07.931  INFO 2124 --- [main] com.controller.DemoApplication           : Started DemoApplication in 7.898 seconds (JVM running for 8.575)
+2017-07-21 15:56:14.503  INFO 2124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-21 15:56:14.508  INFO 2124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-21 15:56:14.534  INFO 2124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-07-21 15:56:14.564  INFO 2124 --- [http-nio-8080-exec-1] this.class                               : 你进入的index控制器
+2017-07-21 15:56:14.569  WARN 2124 --- [http-nio-8080-exec-1] this.class                               : 测试日志进行本地存储
+2017-07-21 15:56:24.350  INFO 2124 --- [http-nio-8080-exec-2] this.class                               : 你进入的index控制器
+2017-07-21 15:56:24.351  WARN 2124 --- [http-nio-8080-exec-2] this.class                               : 测试日志进行本地存储
