@@ -1,34 +1,40 @@
 package com.controller;
 
-import com.Pojo.User;
-import com.Pojo.UserPojo;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by daibo on 2017/7/21.
+ * index控制器
  */
-@RestController
+@Controller
 @EnableAutoConfiguration
 public class IndexController {
     private org.slf4j.Logger log = LoggerFactory.getLogger("this.class");
 
 
     @RequestMapping(value = "index")
-    public String Index() {
+    public String Index(HttpSession session ) {
         log.info("你进入的index控制器");
+        session.setAttribute("name","index控制");
         log.warn("测试日志进行本地存储");
-        return "Hello";
-    }
-
-    @RequestMapping(value = "hello",method = RequestMethod.GET)
-    public String hello( ) {
 
         return "hello";
     }
+
+    @RequestMapping(value = "hello",method = RequestMethod.GET)
+    public String hello( ModelMap map,HttpSession session ,String userName ) {
+        session.setAttribute("name",userName);
+        String name =session.getAttribute("name").toString();
+        map.addAttribute("name","你好");
+        map.addAttribute("name_from_session",name);
+        return "hello";
+    }
+
 }
