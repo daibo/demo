@@ -22,10 +22,7 @@ public class IndexController {
     @RequestMapping(value = "index")
     public String Index(HttpSession session ) {
         log.info("你进入的index控制器");
-        session.setAttribute("name","index控制");
-        log.warn("测试日志进行本地存储");
-
-        return "hello";
+        return "index";
     }
 
     @RequestMapping(value = "hello",method = RequestMethod.GET)
