@@ -3,7 +3,6 @@ package com.controller;
 import com.Auth.PubliDic;
 import com.dao.D_secu_user;
 import com.model.M_login_user;
-import com.model.M_secu_user;
 import com.service.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
@@ -32,6 +30,7 @@ public class LoginController {
     @RequestMapping(value = "login")
     public String loginWeb(Model model) {
         model.addAttribute("M_login_user",m_login_user);
+        model.addAttribute("messages","请登录");
         return "login";
     }
 

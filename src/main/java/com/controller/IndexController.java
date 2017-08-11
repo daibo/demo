@@ -19,7 +19,7 @@ public class IndexController {
     @RequestMapping(value = "index")
     public String Index(HttpSession session) {
         log.info("你进入的index控制器");
-        return "hello";
+        return "index";
     }
 
 }
