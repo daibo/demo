@@ -16,12 +16,10 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
     private org.slf4j.Logger log = LoggerFactory.getLogger("IndexController.class");
 
-
     @RequestMapping(value = "index")
     public String Index(HttpSession session) {
         log.info("你进入的index控制器");
-        return "index";
+        return "hello";
     }
-
 
 }
