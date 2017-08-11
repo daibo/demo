@@ -29,8 +29,8 @@ public class MyFilter implements Filter {
         String url = ((HttpServletRequest) request).getRequestURI();
         //去除掉静态资源的过滤以及对于登录界面的过滤
         if (url.contains(".css") || url.contains("login") || url.contains(".js") || url.contains(".png") || url.contains(".jpg") || url.contains(".woff") || url.contains(".woff2")) {
-            if (url.contains("login") && session.getAttribute("userName") != null) {
-                System.out.println("用户已经登录___" + session.getAttribute("userName"));
+            if (url.contains("login") && session.getAttribute(PubliDic.USER_ID) != null) {
+                System.out.println("用户已经登录___" + session.getAttribute(PubliDic.USER_ID));
                 rsp.sendRedirect("index");
             }
         } else {

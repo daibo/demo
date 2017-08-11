@@ -31,6 +31,7 @@ public class LoginService {
         }
         M_secu_user m =m_secu_userList.get(0);
         if(m.getPass_word().equals(loginUser.getPassWord())){
+            log.info(m.getUser_name());
             session.setAttribute(PubliDic.USER_ID,m.getUser_name());
             return true;
         }

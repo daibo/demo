@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -29,22 +30,23 @@ public class LoginController {
     LoginService loginService;
     @RequestMapping(value = "login")
     public String loginWeb(Model model) {
+
         model.addAttribute("M_login_user",m_login_user);
         model.addAttribute("messages","请登录");
         return "login";
     }
 
     @RequestMapping(value = "loginIn")
-    public String LoginIn(@Valid M_login_user  m_login_user ,HttpSession session,Model model) {
+    @ResponseBody
+    public Model LoginIn(@Valid M_login_user  m_login_user ,HttpSession session,Model model) {
         log.info("验证登录");
         if(loginService.loginAuth(m_login_user,session)){
             log.info("登录成功");
             model.addAttribute(PubliDic.MSG,"登录成功");
-        }else{
+        }else {
             log.info("登录失败");
-            model.addAttribute(PubliDic.MSG,"登录失败");
+            model.addAttribute(PubliDic.MSG, "登录失败");
         }
-        return "login";
+        return  model;
     }
-
 }

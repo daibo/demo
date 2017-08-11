@@ -9010,3 +9010,318 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
 2017-08-11 17:30:40.781  INFO 8680 --- [http-nio-8080-exec-1] LoginController.class                    : 验证登录
 2017-08-11 17:30:41.792  INFO 8680 --- [http-nio-8080-exec-1] LoginController.class                    : 登录成功
 2017-08-11 17:30:48.306  INFO 8680 --- [http-nio-8080-exec-6] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:33:52.485  INFO 8680 --- [http-nio-8080-exec-9] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:34:04.667  INFO 8680 --- [http-nio-8080-exec-3] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:35:28.213 ERROR 14948 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-11 17:35:28.502  INFO 14948 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 14948 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-11 17:35:28.503  INFO 14948 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-11 17:35:31.443  INFO 14948 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Fri Aug 11 17:35:31 CST 2017]; root of context hierarchy
+2017-08-11 17:35:51.310  INFO 14948 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-11 17:35:51.342  INFO 14948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-11 17:35:51.354  INFO 14948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-11 17:35:51.673  INFO 14948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-11 17:35:51.697  INFO 14948 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 20261 ms
+2017-08-11 17:35:52.455  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-11 17:35:52.501  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-11 17:35:52.503  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-11 17:35:52.514  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-11 17:35:52.515  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-11 17:35:52.516  INFO 14948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-11 17:35:55.575  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Fri Aug 11 17:35:31 CST 2017]; root of context hierarchy
+2017-08-11 17:35:55.960  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.controller.IndexController.Index(javax.servlet.http.HttpSession)
+2017-08-11 17:35:55.962  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.controller.LoginController.loginWeb(org.springframework.ui.Model)
+2017-08-11 17:35:55.963  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginIn]}" onto public java.lang.String com.controller.LoginController.LoginIn(com.model.M_login_user,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2017-08-11 17:35:55.982  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-11 17:35:56.003  INFO 14948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-11 17:35:56.185  INFO 14948 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:35:56.186  INFO 14948 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:35:56.362  INFO 14948 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:36:00.259  INFO 14948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-11 17:36:00.902  INFO 14948 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-11 17:36:01.269  INFO 14948 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-11 17:36:01.325  INFO 14948 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 34.138 seconds (JVM running for 36.215)
+2017-08-11 17:37:08.456  INFO 14948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-11 17:37:08.456  INFO 14948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-11 17:37:08.516  INFO 14948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2017-08-11 17:37:08.617  INFO 14948 --- [http-nio-8080-exec-1] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:37:15.060  INFO 14948 --- [http-nio-8080-exec-6] LoginController.class                    : 验证登录
+2017-08-11 17:37:15.978  INFO 14948 --- [http-nio-8080-exec-6] LoginController.class                    : 登录成功
+2017-08-11 17:37:57.485  INFO 14948 --- [http-nio-8080-exec-7] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:38:30.564  INFO 14948 --- [http-nio-8080-exec-10] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:38:35.501  INFO 14948 --- [http-nio-8080-exec-7] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:38:41.711  INFO 14948 --- [http-nio-8080-exec-1] LoginController.class                    : 验证登录
+2017-08-11 17:38:41.741  INFO 14948 --- [http-nio-8080-exec-1] LoginController.class                    : 登录失败
+2017-08-11 17:38:41.763  INFO 14948 --- [http-nio-8080-exec-7] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:38:58.048  INFO 14948 --- [http-nio-8080-exec-4] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:39:02.582  INFO 14948 --- [http-nio-8080-exec-8] LoginController.class                    : 验证登录
+2017-08-11 17:39:02.595  INFO 14948 --- [http-nio-8080-exec-8] LoginController.class                    : 登录成功
+2017-08-11 17:39:11.574  INFO 14948 --- [http-nio-8080-exec-9] LoginController.class                    : 验证登录
+2017-08-11 17:39:11.616  INFO 14948 --- [http-nio-8080-exec-9] LoginController.class                    : 登录成功
+2017-08-11 17:39:11.656  INFO 14948 --- [http-nio-8080-exec-3] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:40:08.663  INFO 14948 --- [http-nio-8080-exec-6] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:40:16.211  INFO 14948 --- [http-nio-8080-exec-3] LoginController.class                    : 验证登录
+2017-08-11 17:40:16.229  INFO 14948 --- [http-nio-8080-exec-3] LoginController.class                    : 登录失败
+2017-08-11 17:40:16.328  INFO 14948 --- [http-nio-8080-exec-2] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:43:26.418 ERROR 380 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-11 17:43:26.693  INFO 380 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 380 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-11 17:43:26.694  INFO 380 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-11 17:43:30.709  INFO 380 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Fri Aug 11 17:43:30 CST 2017]; root of context hierarchy
+2017-08-11 17:43:49.761 ERROR 15092 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-11 17:43:50.068  INFO 15092 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 15092 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-11 17:43:50.070  INFO 15092 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-11 17:43:51.180  INFO 15092 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7093047b: startup date [Fri Aug 11 17:43:51 CST 2017]; root of context hierarchy
+2017-08-11 17:44:07.879  INFO 15092 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-11 17:44:07.903  INFO 15092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-11 17:44:07.924  INFO 15092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-11 17:44:08.349  INFO 15092 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-11 17:44:08.379  INFO 15092 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 17228 ms
+2017-08-11 17:44:09.091  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-11 17:44:09.104  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-11 17:44:09.104  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-11 17:44:09.111  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-11 17:44:09.111  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-11 17:44:09.112  INFO 15092 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-11 17:44:12.323  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7093047b: startup date [Fri Aug 11 17:43:51 CST 2017]; root of context hierarchy
+2017-08-11 17:44:12.791  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.controller.IndexController.Index(javax.servlet.http.HttpSession)
+2017-08-11 17:44:12.799  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.controller.LoginController.loginWeb(org.springframework.ui.Model)
+2017-08-11 17:44:12.810  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginIn]}" onto public java.lang.String com.controller.LoginController.LoginIn(com.model.M_login_user,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2017-08-11 17:44:12.832  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-11 17:44:12.978  INFO 15092 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-11 17:44:13.366  INFO 15092 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:44:13.367  INFO 15092 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:44:13.617  INFO 15092 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:44:19.222  INFO 15092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-11 17:44:19.789  INFO 15092 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-11 17:44:20.336  INFO 15092 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-11 17:44:20.444  INFO 15092 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 31.576 seconds (JVM running for 33.388)
+2017-08-11 17:44:23.639  INFO 15092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-11 17:44:23.736  INFO 15092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-11 17:44:23.901  INFO 15092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 98 ms
+2017-08-11 17:44:24.458  INFO 15092 --- [http-nio-8080-exec-1] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:44:31.768  INFO 15092 --- [http-nio-8080-exec-6] LoginController.class                    : 验证登录
+2017-08-11 17:44:33.161  INFO 15092 --- [http-nio-8080-exec-6] com.service.LoginService                 : 1
+2017-08-11 17:44:33.177  INFO 15092 --- [http-nio-8080-exec-6] LoginController.class                    : 登录成功
+2017-08-11 17:44:40.391  INFO 15092 --- [http-nio-8080-exec-5] LoginController.class                    : 验证登录
+2017-08-11 17:44:40.411  INFO 15092 --- [http-nio-8080-exec-5] com.service.LoginService                 : 1
+2017-08-11 17:44:40.412  INFO 15092 --- [http-nio-8080-exec-5] LoginController.class                    : 登录成功
+2017-08-11 17:44:40.434  INFO 15092 --- [http-nio-8080-exec-6] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:44:47.671  INFO 15092 --- [http-nio-8080-exec-2] IndexController.class                    : 你进入的index控制器
+2017-08-11 17:47:29.043 ERROR 8976 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-11 17:47:29.343  INFO 8976 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 8976 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-11 17:47:29.345  INFO 8976 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-11 17:47:30.775  INFO 8976 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Fri Aug 11 17:47:30 CST 2017]; root of context hierarchy
+2017-08-11 17:47:45.805  INFO 8976 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-11 17:47:45.846  INFO 8976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-11 17:47:45.868  INFO 8976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-11 17:47:46.449  INFO 8976 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-11 17:47:46.461  INFO 8976 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15692 ms
+2017-08-11 17:47:47.018  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-11 17:47:47.031  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-11 17:47:47.032  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-11 17:47:47.040  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-11 17:47:47.040  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-11 17:47:47.041  INFO 8976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-11 17:47:50.404  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Fri Aug 11 17:47:30 CST 2017]; root of context hierarchy
+2017-08-11 17:47:50.947  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String com.controller.IndexController.Index(javax.servlet.http.HttpSession)
+2017-08-11 17:47:50.962  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.controller.LoginController.loginWeb(org.springframework.ui.Model)
+2017-08-11 17:47:50.966  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginIn]}" onto public org.springframework.ui.Model com.controller.LoginController.LoginIn(com.model.M_login_user,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2017-08-11 17:47:51.001  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-11 17:47:51.051  INFO 8976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-11 17:47:51.248  INFO 8976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:47:51.248  INFO 8976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:47:51.394  INFO 8976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-11 17:47:55.088  INFO 8976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-11 17:47:55.467  INFO 8976 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-11 17:47:55.835  INFO 8976 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-11 17:47:56.006  INFO 8976 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 27.814 seconds (JVM running for 29.868)
+2017-08-11 17:49:18.681  INFO 8976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-11 17:49:18.683  INFO 8976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-11 17:49:18.809  INFO 8976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 103 ms
+2017-08-11 17:49:23.531  INFO 8976 --- [http-nio-8080-exec-6] LoginController.class                    : 验证登录
+2017-08-11 17:49:24.329  INFO 8976 --- [http-nio-8080-exec-6] com.service.LoginService                 : 1
+2017-08-11 17:49:24.330  INFO 8976 --- [http-nio-8080-exec-6] LoginController.class                    : 登录成功
+2017-08-11 17:49:24.353 ERROR 8976 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "loginIn": Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+2017-08-11 17:49:24.370 ERROR 8976 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:42) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-11 17:52:26.982  INFO 8976 --- [http-nio-8080-exec-9] LoginController.class                    : 验证登录
+2017-08-11 17:52:26.994  INFO 8976 --- [http-nio-8080-exec-9] LoginController.class                    : 登录失败
+2017-08-11 17:52:27.011 ERROR 8976 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "loginIn": Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+2017-08-11 17:52:27.012 ERROR 8976 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:42) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-11 17:52:56.857  INFO 8976 --- [http-nio-8080-exec-5] LoginController.class                    : 验证登录
+2017-08-11 17:52:56.862  INFO 8976 --- [http-nio-8080-exec-5] LoginController.class                    : 登录失败
+2017-08-11 17:52:56.876 ERROR 8976 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "loginIn": Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+2017-08-11 17:52:56.877 ERROR 8976 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "loginIn", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:42) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-11 17:53:11.148  INFO 8976 --- [http-nio-8080-exec-1] IndexController.class                    : 你进入的index控制器
