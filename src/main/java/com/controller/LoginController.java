@@ -25,41 +25,41 @@ import java.util.Map;
 @Controller
 @EnableAutoConfiguration
 public class LoginController {
-    private Logger log = LoggerFactory.getLogger("LoginController.class");
-    M_login_user m_login_user = new M_login_user();
-    @Autowired
-    D_secu_user d_user;
-    @Autowired
-    LoginService loginService;
-
-
-    @RequestMapping(value = "login")
-    public String LoginIn(@Valid M_login_user m_login_user, HttpSession session, Model model) {
-        if(session.getAttribute(PubliDic.USER_ID)!=null){
-            return "index";
-        }
-        model.addAttribute("M_login_user", m_login_user);
-        model.addAttribute(PubliDic.MSG, "请登录");
-        log.info("验证登录"+m_login_user.toString());
-        if(m_login_user.getUserName()!=null){
-            if (loginService.loginAuth(m_login_user, session)) {
-                log.info("登录成功");
-                model.addAttribute(PubliDic.MSG, "登录成功");
-                return "index";
-            } else {
-                log.info("登录失败");
-                model.addAttribute(PubliDic.MSG, "登录失败");
-            }
-        }
-        return "login";
-    }
-
-    @RequestMapping(value = "loginOut")
-    public String loginOut(@Valid M_login_user m_login_user, HttpSession session, Model model) {
-        model.addAttribute(PubliDic.MSG, "请登录");
-        log.info("退出登录");
-        session.removeAttribute(PubliDic.USER_ID);
-        return "login";
-    }
+//    private Logger log = LoggerFactory.getLogger("LoginController.class");
+//    M_login_user m_login_user = new M_login_user();
+//    @Autowired
+//    D_secu_user d_user;
+//    @Autowired
+//    LoginService loginService;
+//
+//
+//    @RequestMapping(value = "login")
+//    public String LoginIn(@Valid M_login_user m_login_user, HttpSession session, Model model) {
+//        if(session.getAttribute(PubliDic.USER_ID)!=null){
+//            return "index";
+//        }
+//        model.addAttribute("M_login_user", m_login_user);
+//        model.addAttribute(PubliDic.MSG, "请登录");
+//        log.info("验证登录"+m_login_user.toString());
+//        if(m_login_user.getUserName()!=null){
+//            if (loginService.loginAuth(m_login_user, session)) {
+//                log.info("登录成功");
+//                model.addAttribute(PubliDic.MSG, "登录成功");
+//                return "index";
+//            } else {
+//                log.info("登录失败");
+//                model.addAttribute(PubliDic.MSG, "登录失败");
+//            }
+//        }
+//        return "login";
+//    }
+//
+//    @RequestMapping(value = "loginOut")
+//    public String loginOut(@Valid M_login_user m_login_user, HttpSession session, Model model) {
+//        model.addAttribute(PubliDic.MSG, "请登录");
+//        log.info("退出登录");
+//        session.removeAttribute(PubliDic.USER_ID);
+//        return "login";
+//    }
 
 }
