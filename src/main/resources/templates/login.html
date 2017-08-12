@@ -16,10 +16,10 @@
         <h1>Login page</h1>
         <div class="app-location">
             <h2>Welcome</h2>
-            <h3 id ="login_R" th:text="${messages}">XXXX</h3>
+            <h3 id ="login_text" th:text="${messages}">XXXX</h3>
             <div class="line"><span></span></div>
             <div class="location"><img src="images/login_location.png" class="img-responsive" alt="" /></div>
-            <form id="iform" th:action="@{/loginIn}"    th:method="post" >
+            <form id="iform" th:action="@{/login}"    th:method="post" >
                 <input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" name="userName" id ="userName"  th:value="*{userName}" />
                 <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" name ="passWord" id ="passWord" th:value="*{passWord}" />
                 <div class="submit"><input type="submit"  value="Sign in" ></div>

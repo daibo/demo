@@ -31,7 +31,6 @@ public class MyFilter implements Filter {
         if (url.contains(".css") || url.contains("login") || url.contains(".js") || url.contains(".png") || url.contains(".jpg") || url.contains(".woff") || url.contains(".woff2")) {
             if (url.contains("login") && session.getAttribute(PubliDic.USER_ID) != null) {
                 System.out.println("用户已经登录___" + session.getAttribute(PubliDic.USER_ID));
-                rsp.sendRedirect("index");
             }
         } else {
             if (session.getAttribute(PubliDic.USER_ID) == null || "".equals(session.getAttribute(PubliDic.USER_ID))) {
