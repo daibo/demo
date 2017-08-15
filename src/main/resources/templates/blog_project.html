@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  xmlns="://.w3.org/1999/xhtml"       xmlns:th="://.thymeleaf.org">
   <head>
     <meta charset="utf-8">
     <title>Singular Personal Portfolio Template</title>
@@ -26,12 +26,13 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <div class="project-intro wow fadeInUp">
-                  <h1>Here goes the whatsoever title that goes</h1>
+                  <h1 th:text="${blogDtails.blogTitle}">Here goes the whatsoever title that goes</h1>
                   <p>As usual some bullsheet that comes right after a big heading to compensate the unbearable
                      nuisance. So, I'll just write some blah and blah. Hope you don't mind me.
                    </p>
-                   <img class="img-responsive" src="assets/images/5.jpg" alt="Project Image">
-                   <p>You know when you are telling people something about a project you can just show images or be more
+                   <!--<img class="img-responsive" src="assets/images/5.jpg" alt="Project Image">-->
+                  <img th:src="@{${blogDtails.blogImgAddr}}"  class="img-responsive" src="assets/images/5.jpg" alt="Project Image">
+                   <p th:text="${blogDtails.blogContext}">You know when you are telling people something about a project you can just show images or be more
                      responsible and tell something about it so that the uneducated or lazy or under-creative
                      can understand something about what you have created.
                    </p>
