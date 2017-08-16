@@ -14174,3 +14174,1346 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 测试内容1
 测试内容1
 测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:07:28.036 ERROR 4656 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:07:28.284  INFO 4656 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 4656 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:07:28.285  INFO 4656 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:07:29.519  INFO 4656 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@689304e0: startup date [Wed Aug 16 10:07:29 CST 2017]; root of context hierarchy
+2017-08-16 10:07:41.747  INFO 4656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:07:41.780  INFO 4656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:07:41.792  INFO 4656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:07:42.067  INFO 4656 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:07:42.076  INFO 4656 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12564 ms
+2017-08-16 10:07:42.509  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:07:42.520  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:07:42.521  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:07:42.526  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:07:42.526  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:07:42.526  INFO 4656 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:07:44.116  INFO 4656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@689304e0: startup date [Wed Aug 16 10:07:29 CST 2017]; root of context hierarchy
+2017-08-16 10:07:44.306  INFO 4656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:07:44.310  INFO 4656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:07:44.313  INFO 4656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:07:44.314  INFO 4656 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:07:44.561  INFO 4656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:07:44.562  INFO 4656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:07:44.670  INFO 4656 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:07:46.873  INFO 4656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:07:47.075  INFO 4656 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:07:47.212  INFO 4656 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:07:47.224  INFO 4656 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 19.864 seconds (JVM running for 21.633)
+2017-08-16 10:07:51.382  INFO 4656 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:07:51.417  INFO 4656 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:07:51.501  INFO 4656 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 81 ms
+2017-08-16 10:07:51.634  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:07:52.418  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:07:52.705  INFO 4656 --- [http-nio-8080-exec-9] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:07:52.718  INFO 4656 --- [http-nio-8080-exec-9] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:07:56.742  INFO 4656 --- [http-nio-8080-exec-6] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:07:56.751  INFO 4656 --- [http-nio-8080-exec-6] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:08:06.714  INFO 4656 --- [http-nio-8080-exec-6] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:08:06.720  INFO 4656 --- [http-nio-8080-exec-6] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:08:06.730  INFO 4656 --- [http-nio-8080-exec-6] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:08:06.806  INFO 4656 --- [http-nio-8080-exec-8] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:08:06.963  INFO 4656 --- [http-nio-8080-exec-8] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:08:16.902  INFO 4656 --- [http-nio-8080-exec-5] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:08:16.907  INFO 4656 --- [http-nio-8080-exec-5] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:08:16.914  INFO 4656 --- [http-nio-8080-exec-5] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:08:16.937  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:08:16.939  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:08:20.311  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:08:20.317  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:08:20.324  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:08:20.332  INFO 4656 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:08:20.340  INFO 4656 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:08:23.527  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:08:23.533  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:08:23.535  INFO 4656 --- [http-nio-8080-exec-4] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:08:23.547  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:08:23.549  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:10:55.738  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:10:55.738  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:10:55.753  INFO 4656 --- [http-nio-8080-exec-10] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:10:55.763  INFO 4656 --- [http-nio-8080-exec-7] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:10:55.771  INFO 4656 --- [http-nio-8080-exec-7] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:11:08.119 ERROR 17348 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:11:08.365  INFO 17348 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 17348 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:11:08.366  INFO 17348 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:11:10.362  INFO 17348 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Wed Aug 16 10:11:10 CST 2017]; root of context hierarchy
+2017-08-16 10:11:22.514  INFO 17348 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:11:22.539  INFO 17348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:11:22.550  INFO 17348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:11:22.855  INFO 17348 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:11:22.871  INFO 17348 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12515 ms
+2017-08-16 10:11:23.280  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:11:23.299  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:11:23.300  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:11:23.308  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:11:23.308  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:11:23.308  INFO 17348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:11:25.347  INFO 17348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Wed Aug 16 10:11:10 CST 2017]; root of context hierarchy
+2017-08-16 10:11:25.649  INFO 17348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:11:25.653  INFO 17348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:11:25.662  INFO 17348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:11:25.664  INFO 17348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:11:25.841  INFO 17348 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:11:25.844  INFO 17348 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:11:26.006  INFO 17348 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:11:28.728  INFO 17348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:11:28.983  INFO 17348 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:11:29.237  INFO 17348 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:11:29.292  INFO 17348 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 21.86 seconds (JVM running for 23.732)
+2017-08-16 10:11:45.998  INFO 17348 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:11:45.999  INFO 17348 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:11:46.074  INFO 17348 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
+2017-08-16 10:11:46.249  INFO 17348 --- [http-nio-8080-exec-10] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:11:47.412  INFO 17348 --- [http-nio-8080-exec-10] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:11:55.026  INFO 17348 --- [http-nio-8080-exec-9] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:11:55.027  INFO 17348 --- [http-nio-8080-exec-9] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:11:55.038  INFO 17348 --- [http-nio-8080-exec-9] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:12:01.981  INFO 17348 --- [http-nio-8080-exec-10] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:12:01.990  INFO 17348 --- [http-nio-8080-exec-10] home_controller_blog.class               : 查询的文件为::::null
+2017-08-16 10:12:01.992  INFO 17348 --- [http-nio-8080-exec-10] home_controller_blog.class               : []
+2017-08-16 10:12:02.012 ERROR 17348 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index: 0, Size: 0] with root cause
+
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653) ~[na:1.8.0_25]
+	at java.util.ArrayList.get(ArrayList.java:429) ~[na:1.8.0_25]
+	at com.controller.Blog_Controller.project(Blog_Controller.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:41) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-16 10:15:42.990 ERROR 13880 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:15:43.219  INFO 13880 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 13880 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:15:43.220  INFO 13880 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:15:44.437  INFO 13880 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59e260cd: startup date [Wed Aug 16 10:15:44 CST 2017]; root of context hierarchy
+2017-08-16 10:15:56.346  INFO 13880 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:15:56.363  INFO 13880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:15:56.371  INFO 13880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:15:56.723  INFO 13880 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:15:56.747  INFO 13880 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12316 ms
+2017-08-16 10:15:57.243  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:15:57.250  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:15:57.251  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:15:57.261  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:15:57.262  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:15:57.262  INFO 13880 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:15:59.933  INFO 13880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59e260cd: startup date [Wed Aug 16 10:15:44 CST 2017]; root of context hierarchy
+2017-08-16 10:16:00.200  INFO 13880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:16:00.206  INFO 13880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:16:00.212  INFO 13880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:16:00.213  INFO 13880 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:16:00.347  INFO 13880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:16:00.348  INFO 13880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:16:00.489  INFO 13880 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:16:02.398  INFO 13880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:16:02.561  INFO 13880 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:16:02.747  INFO 13880 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:16:02.759  INFO 13880 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 20.469 seconds (JVM running for 21.907)
+2017-08-16 10:16:06.828  INFO 13880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:16:06.836  INFO 13880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:16:06.891  INFO 13880 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+2017-08-16 10:16:07.004  INFO 13880 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:16:07.004  INFO 13880 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:16:07.799  INFO 13880 --- [http-nio-8080-exec-1] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:16:12.160  INFO 13880 --- [http-nio-8080-exec-7] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:16:12.168  INFO 13880 --- [http-nio-8080-exec-7] home_controller_blog.class               : 查询的文件为::::null
+2017-08-16 10:16:12.182 ERROR 13880 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+2017-08-16 10:16:12.220 ERROR 13880 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "index", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.TemplateRepository.getTemplate(TemplateRepository.java:246) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1104) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:41) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-16 10:17:01.078  INFO 13880 --- [http-nio-8080-exec-9] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:17:01.083  INFO 13880 --- [http-nio-8080-exec-9] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:19:13.126 ERROR 16548 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:19:13.340  INFO 16548 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 16548 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:19:13.340  INFO 16548 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:19:16.549  INFO 16548 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Wed Aug 16 10:19:16 CST 2017]; root of context hierarchy
+2017-08-16 10:19:26.974  INFO 16548 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:19:27.007  INFO 16548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:19:27.017  INFO 16548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:19:27.275  INFO 16548 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:19:27.288  INFO 16548 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10749 ms
+2017-08-16 10:19:27.684  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:19:27.707  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:19:27.708  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:19:27.724  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:19:27.725  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:19:27.725  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:19:29.398  INFO 16548 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Wed Aug 16 10:19:16 CST 2017]; root of context hierarchy
+2017-08-16 10:19:29.582  INFO 16548 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:19:29.586  INFO 16548 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:19:29.593  INFO 16548 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:19:29.595  INFO 16548 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:19:29.730  INFO 16548 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:19:29.730  INFO 16548 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:19:29.850  INFO 16548 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:19:31.481  INFO 16548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:19:31.618  INFO 16548 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:19:31.806  INFO 16548 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:19:31.820  INFO 16548 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 19.339 seconds (JVM running for 20.809)
+2017-08-16 10:19:38.032  INFO 16548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:19:38.042  INFO 16548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:19:38.096  INFO 16548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2017-08-16 10:19:38.202  INFO 16548 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:19:39.316  INFO 16548 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0'}]
+2017-08-16 10:19:44.143  INFO 16548 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:19:44.152  INFO 16548 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:19:44.167  INFO 16548 --- [http-nio-8080-exec-1] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:19:47.842  INFO 16548 --- [http-nio-8080-exec-7] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:19:47.850  INFO 16548 --- [http-nio-8080-exec-7] home_controller_blog.class               : 查询的文件为::::null
+2017-08-16 10:19:51.545  INFO 16548 --- [http-nio-8080-exec-2] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:19:51.553  INFO 16548 --- [http-nio-8080-exec-2] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:19:51.554  INFO 16548 --- [http-nio-8080-exec-2] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:19:59.507  INFO 16548 --- [http-nio-8080-exec-9] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:19:59.516  INFO 16548 --- [http-nio-8080-exec-9] home_controller_blog.class               : 查询的文件为::::0101
+2017-08-16 10:20:03.176  INFO 16548 --- [http-nio-8080-exec-9] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:20:03.185  INFO 16548 --- [http-nio-8080-exec-9] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:20:03.193  INFO 16548 --- [http-nio-8080-exec-9] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0'}]
+2017-08-16 10:21:23.844  INFO 16548 --- [http-nio-8080-exec-3] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:21:23.845  INFO 16548 --- [http-nio-8080-exec-3] home_controller_blog.class               : 查询的文件为::::3
+2017-08-16 10:21:23.847  INFO 16548 --- [http-nio-8080-exec-3] home_controller_blog.class               : [M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0'}]
+2017-08-16 10:36:49.875  INFO 16548 --- [Thread-14] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Wed Aug 16 10:19:16 CST 2017]; root of context hierarchy
+2017-08-16 10:36:49.880  INFO 16548 --- [Thread-14] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-08-16 10:36:50.973 ERROR 16548 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:36:50.993  INFO 16548 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 16548 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:36:50.994  INFO 16548 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:36:51.015  INFO 16548 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70d25bdd: startup date [Wed Aug 16 10:36:51 CST 2017]; root of context hierarchy
+2017-08-16 10:37:05.681  INFO 16548 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:37:05.702  INFO 16548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:37:05.706  INFO 16548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:37:05.774  INFO 16548 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:37:05.851  INFO 16548 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 14836 ms
+2017-08-16 10:37:06.178  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:37:06.181  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:37:06.181  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:37:06.182  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:37:06.182  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:37:06.182  INFO 16548 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:37:06.241  WARN 16548 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blog': Unsatisfied dependency expressed through field 'blog_service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blog_service' defined in file [C:\Users\daibo\Desktop\demo\target\classes\com\service\Blog_service.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.service.Blog_service] for resource metadata: could not find class that it depends on
+2017-08-16 10:37:06.265  INFO 16548 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-08-16 10:37:06.305  INFO 16548 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-08-16 10:37:06.340 ERROR 16548 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blog': Unsatisfied dependency expressed through field 'blog_service'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blog_service' defined in file [C:\Users\daibo\Desktop\demo\target\classes\com\service\Blog_service.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.service.Blog_service] for resource metadata: could not find class that it depends on
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at com.DemoApplication.main(DemoApplication.java:14) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.3.0.RELEASE.jar:1.3.0.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blog_service' defined in file [C:\Users\daibo\Desktop\demo\target\classes\com\service\Blog_service.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.service.Blog_service] for resource metadata: could not find class that it depends on
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect bean class [com.service.Blog_service] for resource metadata: could not find class that it depends on
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:344) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:297) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:992) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 33 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/dao/D_blog_details;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_25]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2575) ~[na:1.8.0_25]
+	at java.lang.Class.getDeclaredFields(Class.java:1908) ~[na:1.8.0_25]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:715) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:656) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:361) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:340) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.dao.D_blog_details
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372) ~[na:1.8.0_25]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[na:1.8.0_25]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_25]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360) ~[na:1.8.0_25]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_25]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308) ~[na:1.8.0_25]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_25]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:151) ~[spring-boot-devtools-1.3.0.RELEASE.jar:1.3.0.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_25]
+	... 43 common frames omitted
+
+2017-08-16 10:39:45.491 ERROR 6944 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:39:45.737  INFO 6944 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 6944 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:39:45.738  INFO 6944 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:39:47.227  INFO 6944 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59e260cd: startup date [Wed Aug 16 10:39:47 CST 2017]; root of context hierarchy
+2017-08-16 10:40:04.276  INFO 6944 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:40:04.333  INFO 6944 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:40:04.350  INFO 6944 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:40:04.698  INFO 6944 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:40:04.715  INFO 6944 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 17505 ms
+2017-08-16 10:40:05.194  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:40:05.211  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:40:05.212  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:40:05.222  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:40:05.224  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:40:05.224  INFO 6944 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:40:07.793  INFO 6944 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59e260cd: startup date [Wed Aug 16 10:39:47 CST 2017]; root of context hierarchy
+2017-08-16 10:40:08.491  INFO 6944 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:40:08.498  INFO 6944 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:40:08.507  INFO 6944 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:40:08.509  INFO 6944 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:40:08.688  INFO 6944 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:40:08.689  INFO 6944 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:40:08.832  INFO 6944 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:40:11.036  INFO 6944 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:40:11.252  INFO 6944 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:40:11.443  INFO 6944 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:40:11.457  INFO 6944 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 26.657 seconds (JVM running for 28.221)
+2017-08-16 10:40:17.785  INFO 6944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:40:17.815  INFO 6944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:40:17.952  INFO 6944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 137 ms
+2017-08-16 10:40:18.110  INFO 6944 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:40:18.111  INFO 6944 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询的文件为::::3
+2017-08-16 10:40:19.647  INFO 6944 --- [http-nio-8080-exec-1] home_controller_blog.class               : [M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0', user_icon='null'}]
+2017-08-16 10:50:42.221 ERROR 15064 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 10:50:42.447  INFO 15064 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 15064 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 10:50:42.448  INFO 15064 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 10:50:44.100  INFO 15064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Wed Aug 16 10:50:44 CST 2017]; root of context hierarchy
+2017-08-16 10:50:56.920  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 10:50:56.978  INFO 15064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 10:50:56.998  INFO 15064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 10:50:57.387  INFO 15064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 10:50:57.409  INFO 15064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 13321 ms
+2017-08-16 10:50:58.126  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 10:50:58.144  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 10:50:58.145  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 10:50:58.153  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 10:50:58.154  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 10:50:58.154  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 10:51:00.395  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ae9389: startup date [Wed Aug 16 10:50:44 CST 2017]; root of context hierarchy
+2017-08-16 10:51:00.669  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 10:51:00.672  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:51:00.681  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 10:51:00.684  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 10:51:00.767  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:51:00.768  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:51:00.926  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 10:51:03.193  INFO 15064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 10:51:03.425  INFO 15064 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 10:51:03.630  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 10:51:03.649  INFO 15064 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 22.469 seconds (JVM running for 23.835)
+2017-08-16 10:51:20.433  INFO 15064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-16 10:51:20.442  INFO 15064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-16 10:51:20.479  INFO 15064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2017-08-16 10:51:20.533  INFO 15064 --- [http-nio-8080-exec-1] home_controller_blog.class               : 进入blog****************
+2017-08-16 10:51:21.266  INFO 15064 --- [http-nio-8080-exec-1] home_controller_blog.class               : 查询到的文章内容::::::[M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0', user_icon='icon-1.jpg'}, M_blog_details{blog_id='2', blogTitle='测试标题2', blogImgAddr='img_800_600/2.jpg', blogContext='测试内容2
+测试内容2
+测试内容2
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:20.0', user_icon='icon-2.jpg'}, M_blog_details{blog_id='3', blogTitle='测试标题3', blogImgAddr='img_800_600/3.jpg', blogContext='测试内容3
+测试内容3
+测试内容3
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:10:53.0', user_icon='icon-3.jpg'}, M_blog_details{blog_id='4', blogTitle='测试标题4', blogImgAddr='img_800_600/4.jpg', blogContext='测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容4
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='null', time='2017-08-15 16:11:24.0', user_icon='null'}]
+2017-08-16 10:52:01.143  INFO 15064 --- [http-nio-8080-exec-7] home_controller_blog.class               : 进入blog详情****************
+2017-08-16 10:52:01.154  INFO 15064 --- [http-nio-8080-exec-7] home_controller_blog.class               : 查询的文件为::::1
+2017-08-16 10:52:01.167  INFO 15064 --- [http-nio-8080-exec-7] home_controller_blog.class               : [M_blog_details{blog_id='1', blogTitle='测试标题1', blogImgAddr='img_800_600/1.jpg', blogContext='测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1
+测试内容1', blogAuthor='admin', time='2017-10-01 16:08:53.0', user_icon='icon-1.jpg'}]
+2017-08-16 10:52:01.252 ERROR 15064 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "blog_project": Could not parse as expression: "${blogDtails.user_icon" (blog_project)
+2017-08-16 10:52:01.368 ERROR 15064 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "${blogDtails.user_icon" (blog_project)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "${blogDtails.user_icon" (blog_project)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:238) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:79) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:40) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.standard.processor.attr.AbstractStandardConditionalVisibilityAttrProcessor.isVisible(AbstractStandardConditionalVisibilityAttrProcessor.java:65) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractConditionalVisibilityAttrProcessor.processAttribute(AbstractConditionalVisibilityAttrProcessor.java:59) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.attr.AbstractAttrProcessor.doProcess(AbstractAttrProcessor.java:87) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.processor.AbstractProcessor.process(AbstractProcessor.java:212) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.applyNextProcessor(Node.java:1017) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:972) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.computeNextChild(NestableNode.java:695) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.NestableNode.doAdditionalProcess(NestableNode.java:668) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Node.processNode(Node.java:990) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.dom.Document.process(Document.java:93) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1155) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1060) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1011) ~[thymeleaf-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring4-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at com.Auth.MyFilter.doFilter(MyFilter.java:41) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.15.jar:8.5.15]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2017-08-16 11:13:27.580 ERROR 2684 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 11:13:27.844  INFO 2684 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 2684 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 11:13:27.846  INFO 2684 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 11:13:30.791  INFO 2684 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Wed Aug 16 11:13:30 CST 2017]; root of context hierarchy
+2017-08-16 11:13:44.467  INFO 2684 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 11:13:44.496  INFO 2684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 11:13:44.516  INFO 2684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 11:13:45.148  INFO 2684 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 11:13:45.169  INFO 2684 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 14412 ms
+2017-08-16 11:13:45.622  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 11:13:45.634  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 11:13:45.635  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 11:13:45.642  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 11:13:45.642  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 11:13:45.642  INFO 2684 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 11:13:51.127  INFO 2684 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e4f324c: startup date [Wed Aug 16 11:13:30 CST 2017]; root of context hierarchy
+2017-08-16 11:13:51.527  INFO 2684 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 11:13:51.535  INFO 2684 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 11:13:51.548  INFO 2684 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 11:13:51.551  INFO 2684 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 11:13:57.245 ERROR 14668 --- [restartedMain] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn; for 'com.controller'
+2017-08-16 11:13:57.449  INFO 14668 --- [restartedMain] com.DemoApplication                      : Starting DemoApplication on DESKTOP-LG4TEAQ with PID 14668 (C:\Users\daibo\Desktop\demo\target\classes started by daibo in C:\Users\daibo\Desktop\demo)
+2017-08-16 11:13:57.450  INFO 14668 --- [restartedMain] com.DemoApplication                      : No active profile set, falling back to default profiles: default
+2017-08-16 11:13:59.133  INFO 14668 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@689304e0: startup date [Wed Aug 16 11:13:59 CST 2017]; root of context hierarchy
+2017-08-16 11:14:14.040  INFO 14668 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-08-16 11:14:14.060  INFO 14668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-08-16 11:14:14.078  INFO 14668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-08-16 11:14:14.381  INFO 14668 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-08-16 11:14:14.398  INFO 14668 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 15272 ms
+2017-08-16 11:14:14.990  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-16 11:14:15.005  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-16 11:14:15.005  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-16 11:14:15.014  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-16 11:14:15.015  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-16 11:14:15.017  INFO 14668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'myFilter' to urls: [/*]
+2017-08-16 11:14:17.259  INFO 14668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@689304e0: startup date [Wed Aug 16 11:13:59 CST 2017]; root of context hierarchy
+2017-08-16 11:14:17.585  INFO 14668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/project]}" onto public java.lang.String com.controller.Blog_Controller.project(javax.servlet.http.HttpSession,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 11:14:17.589  INFO 14668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/index]}" onto public java.lang.String com.controller.Blog_Controller.Home_index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2017-08-16 11:14:17.605  INFO 14668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-16 11:14:17.606  INFO 14668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-16 11:14:17.779  INFO 14668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 11:14:17.779  INFO 14668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 11:14:17.940  INFO 14668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-16 11:14:20.614  INFO 14668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-08-16 11:14:20.884  INFO 14668 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-08-16 11:14:21.107  INFO 14668 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-08-16 11:14:21.138  INFO 14668 --- [restartedMain] com.DemoApplication                      : Started DemoApplication in 24.785 seconds (JVM running for 26.634)

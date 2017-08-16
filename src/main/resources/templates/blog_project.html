@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="contact-link text-center">
-                            <img class="img-circle" src="assets/images/icon.jpg" width="80" alt="Icon">
+                            <img th:unless=${blogDtails.user_icon != null} th:src="@{'user_icon_240_240/'+${blogDtails.user_icon}}"  class="img-circle" src="assets/images/icon.jpg" width="80" alt="Icon">
                             <a href="mailto:hello@teresapalmer.me" target="_top">hello@teresapalmer.me</a>
                         </div>
                     </div>

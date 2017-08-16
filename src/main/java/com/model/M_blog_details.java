@@ -11,15 +11,7 @@ public class M_blog_details {
     private String blogContext;
     private String blogAuthor;
     private String time;
-
-    public M_blog_details(String blog_id, String blogTitle, String blogImgAddr, String blogContext, String blogAuthor, String time) {
-        this.blog_id = blog_id;
-        this.blogTitle = blogTitle;
-        this.blogImgAddr = blogImgAddr;
-        this.blogContext = blogContext;
-        this.blogAuthor = blogAuthor;
-        this.time = time;
-    }
+    private String user_icon;
 
     @Override
     public String toString() {
@@ -30,7 +22,26 @@ public class M_blog_details {
                 ", blogContext='" + blogContext + '\'' +
                 ", blogAuthor='" + blogAuthor + '\'' +
                 ", time='" + time + '\'' +
+                ", user_icon='" + user_icon + '\'' +
                 '}';
+    }
+
+    public M_blog_details(String blog_id, String blogTitle, String blogImgAddr, String blogContext, String blogAuthor, String time, String user_icon) {
+        this.blog_id = blog_id;
+        this.blogTitle = blogTitle;
+        this.blogImgAddr = blogImgAddr;
+        this.blogContext = blogContext;
+        this.blogAuthor = blogAuthor;
+        this.time = time;
+        this.user_icon = user_icon;
+    }
+
+    public String getUser_icon() {
+        return user_icon;
+    }
+
+    public void setUser_icon(String user_icon) {
+        this.user_icon = user_icon;
     }
 
     public String getBlog_id() {
