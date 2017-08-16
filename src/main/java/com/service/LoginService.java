@@ -22,17 +22,17 @@ public class LoginService {
     @Autowired
     D_secu_user d_secu_user;
 
-    public Boolean loginAuth(M_login_user loginUser, HttpSession session){
-        String id =loginUser.getUserName();
-        String psd =loginUser.getPassWord();
-        List<M_secu_user> m_secu_userList =d_secu_user.getUserInfoById(id);
-        if(m_secu_userList.size()!=1){
+    public Boolean loginAuth(M_login_user loginUser, HttpSession session) {
+        String id = loginUser.getUserName();
+        String psd = loginUser.getPassWord();
+        List<M_secu_user> m_secu_userList = d_secu_user.getUserInfoById(id);
+        if (m_secu_userList.size() != 1) {
             return false;
         }
-        M_secu_user m =m_secu_userList.get(0);
-        if(m.getPass_word().equals(loginUser.getPassWord())){
+        M_secu_user m = m_secu_userList.get(0);
+        if (m.getPass_word().equals(loginUser.getPassWord())) {
             log.info(m.getUser_name());
-            session.setAttribute(PubliDic.USER_ID,m.getUser_name());
+            session.setAttribute(PubliDic.USER_ID, m.getUser_name());
             return true;
         }
         return false;

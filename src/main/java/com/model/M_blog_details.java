@@ -5,7 +5,7 @@ package com.model;
  */
 public class M_blog_details {
     // `blog_id`,`blogTitle`,`blogImgAddr`,`blogContext`,`blogAuthor`,`time`
-    private  String blog_id;
+    private String blog_id;
     private String blogTitle;
     private String blogImgAddr;
     private String blogContext;

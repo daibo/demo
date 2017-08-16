@@ -20,27 +20,29 @@ import java.util.List;
 /**
  * Created by daibo on 2017/8/12.
  */
-@Controller(value="blog")
+@Controller(value = "blog")
 @EnableAutoConfiguration
 @RequestMapping(value = "blog")
 public class Blog_Controller {
     private org.slf4j.Logger log = LoggerFactory.getLogger("home_controller_blog.class");
-@Autowired
+    @Autowired
     Blog_service blog_service;
+
     @RequestMapping(value = "index")
-    public String Home_index(HttpServletRequest req, Model model){
+    public String Home_index(HttpServletRequest req, Model model) {
         log.info("进入blog****************");
-        List<M_blog_details> lists = blog_service.getBlogsMainInfo(0,8);
-        log.info("查询到的文章内容::::::"+lists.toString());
-        model.addAttribute("lists",lists);
+        List<M_blog_details> lists = blog_service.getBlogsMainInfo(0, 8);
+        log.info("查询到的文章内容::::::" + lists.toString());
+        model.addAttribute("lists", lists);
         return "blog_index";
     }
+
     //project
     @RequestMapping(value = "project")
-    public String project(HttpSession session, Model model, HttpServletRequest req, HttpServletResponse resp){
+    public String project(HttpSession session, Model model, HttpServletRequest req, HttpServletResponse resp) {
 
-        if(null==req.getAttribute("blog")||"".equals(req.getAttribute("blog"))){
-            model.addAttribute(PubliDic.MSG,"查询错误,查询的id为空");
+        if (null == req.getAttribute("blog") || "".equals(req.getAttribute("blog"))) {
+            model.addAttribute(PubliDic.MSG, "查询错误,查询的id为空");
             try {
                 resp.sendRedirect("index");
             } catch (IOException e) {
@@ -48,11 +50,11 @@ public class Blog_Controller {
             }
         }
         log.info("进入blog详情****************");
-        String blogId =String.valueOf(req.getParameter("blog"));
-        log.info("查询的文件为::::"+blogId);
-        List<M_blog_details> lists =blog_service.getBlogsMainInfoById(blogId);
+        String blogId = String.valueOf(req.getParameter("blog"));
+        log.info("查询的文件为::::" + blogId);
+        List<M_blog_details> lists = blog_service.getBlogsMainInfoById(blogId);
         log.info(lists.toString());
-        model.addAttribute("blogDtails",lists.get(0));
+        model.addAttribute("blogDtails", lists.get(0));
         return "blog_project";
     }
 }

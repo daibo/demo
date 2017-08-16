@@ -23,7 +23,7 @@ public class D_blog_details {
         return jdbcTemplate.query(sql, new Object[]{id}, (rs, rowNum) -> new M_blog_details(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
     }
 
-    public List<M_blog_details> queryForBlogsByLimit(int start, int  limt) {
+    public List<M_blog_details> queryForBlogsByLimit(int start, int limt) {
         String sql = "SELECT `blog_id`,`blogTitle`,`blogImgAddr`,`blogContext`,`blogAuthor`,`time` FROM demo.`blog_details` LIMIT ?,?";
         return jdbcTemplate.query(sql, new Object[]{start, limt}, (rs, rowNum) -> new M_blog_details(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
     }
