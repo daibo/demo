@@ -1,25 +1,28 @@
 package com.controller;
 
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import com.model.Index_articleInfo_M;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Created by daibo on 2017/7/21.
- * index控制器
+ * Created by daibo on 2017/8/31.
  */
 @Controller
-@EnableAutoConfiguration
 public class IndexController {
-    private org.slf4j.Logger log = LoggerFactory.getLogger("IndexController.class");
+    @RequestMapping(value = "index")
+    public String getIndex(Model model) {
+        List<Index_articleInfo_M> lists = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            lists.add(new Index_articleInfo_M(i + "", i + "", i + "", i + "", i + "", i + "", i + ""));
+        }
+        System.out.print(lists.toString());
+        model.addAttribute("Index_articleInfoList", lists);
+        return "index";
+    }
 
-//    @RequestMapping(value = "index")
-//    public String Index(HttpSession session) {
-//        log.info("你进入的index控制器");
-//        return "index";
-//    }
 
 }
