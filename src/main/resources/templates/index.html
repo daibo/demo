@@ -140,17 +140,21 @@
 	<div class="page_left">	
 	<ul class="page_left_list">
 		<!--/*@thymesVar id="Index_articleInfoList" type="bean"*/-->
-		<li  th:each="article,infoList: ${Index_articleInfoList}" class="no_pic">
-			<h2 class="title" ><a href="./article_view">老张博客上线了！</a></h2>
+		<li th:each="article,infoList: ${IndexArticleList}" class="no_pic">
+			<h2 class="title"><a href="./article_view" th:text="${article.title}"
+								 th:href="@{'/article_view/'+${article.id}}">文章标题</a></h2>
 			<div class="date_hits">
 				<!--/*@thymesVar id="article_title" type="attribution"*/-->
-				<span th:text="${article.article_title}">老张</span>
-				<span  th:text="${infoList.size}">2个月前</span>
-				<span><a href="http://www.phplaozhang.com">老张博客</a></span>
-				<span class="hits"><i class="layui-icon" title="点击量"></i> 888 ℃</span>
-				<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span  class="cy_cmt_count">888</span></p>
+				<span th:text="${article.author}">作者</span>
+				<span th:text="${article.launchTime}">发帖时间</span>
+				<span><a href="/index" th:text="${article.articleType}">文章种类</a></span>
+				<span class="hits"><i class="layui-icon" title="点击量"></i> 热度 ℃</span>
+				<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span class="cy_cmt_count">点击量</span>
+				</p>
 			</div>
-			<div class="desc">今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博</div>
+			<div class="desc" th:text="${article.article}">
+				今年(2016年)年初就打算做一个个人博客了，在年初时候想着才年初，今年还有很长时间，所以就没有着急，一直拖着，这一拖就是半年。在五六月分的时候，想着这都半年过去了，博
+			</div>
 		</li>
 		<!--<li>
 			<a href="./article_view" class="pic"><img src="/resources/images/article_pic.png" alt="老张博客上线了！"></a>
@@ -254,6 +258,7 @@
 		</div>
 	</div>
 	<div class="clear"></div>
+	<div id="laypage"></div>
 </div>
 <!-- 文章 结束 -->
 
@@ -276,6 +281,15 @@
 </div>
 <!-- 底部 结束 -->
 <script type="text/javascript">
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'laypage' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+        });
+    });
 layui.use(['form','element'], function(){
 	var layer = layui.layer,
 	form = layui.form(),
